@@ -15,7 +15,7 @@ function Createdb(){
     }
 
     // create Database
-    $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
+    $sql = "CREATE DATABASE IF NOT EXISTS $mydb";
 
     if(mysqli_query($con, $sql)){
         $con = mysqli_connect($servername, $username, $password, $dbname);
